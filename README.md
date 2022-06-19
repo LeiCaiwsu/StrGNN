@@ -2,23 +2,23 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-#anomaly detection with accumulate graph
+anomaly detection with accumulate graph
 
 python Main.py --graph=acc_email.npy --split=email0.01
 
-# acc_email.npy is the graph input with shape (T, N, N), where T is the number of snapshot and N is the number of nodes in the graph
+acc_email.npy is the graph input with shape (T, N, N), where T is the number of snapshot and N is the number of nodes in the graph
 
-# email0.01 contains train_pos_id, train_neg_id, test_pos_id, test_neg_id, train_pos, train_neg, test_pos, test_neg:
+email0.01 contains train_pos_id, train_neg_id, test_pos_id, test_neg_id, train_pos, train_neg, test_pos, test_neg:
 
-# train_pos_id is with shape (N,). It indicates the which snapshot the edge (in train_pos) come from
+train_pos_id is with shape (N,). It indicates the which snapshot the edge (in train_pos) come from
 
-# train_pos is with shape (N, 2). Each row i corresponds to a edge in the snapshot train_pos_id[i]
+train_pos is with shape (N, 2). Each row i corresponds to a edge in the snapshot train_pos_id[i]
 
-# train_neg_id is with shape (N,). It indicates the which snapshot the edge (in train_neg) comes from
+train_neg_id is with shape (N,). It indicates the which snapshot the edge (in train_neg) comes from
 
-# train_neg is with shape (N, 2). Each row i corresponds to a non-exist edge (sample for training classifier) in the snapshot train_neg_id[i]
+train_neg is with shape (N, 2). Each row i corresponds to a non-exist edge (sample for training classifier) in the snapshot train_neg_id[i]
 
-# similar for test_pos_id, test_neg_id, test_pos, test_neg
+similar for test_pos_id, test_neg_id, test_pos, test_neg
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -26,13 +26,13 @@ python Main.py --graph=acc_email.npy --split=email0.01
 
 python Main_statistic.py --graph=sta_email.npy --split=email0.01_sta
 
-# parameters are the same as accumulate setting, the only difference is that the graph is time-evolving graph
+parameters are the same as accumulate setting, the only difference is that the graph is time-evolving graph
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-# data folder contains the processed email data for our model 
+data folder contains the processed email data for our model 
 
-# data_sta folder contains corresponding time-evolving graphs
+data_sta folder contains corresponding time-evolving graphs
 
 --------------------------------------------------------------------------------------------------------------------------------
 Our paper:
