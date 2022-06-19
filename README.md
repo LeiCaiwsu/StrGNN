@@ -4,6 +4,8 @@
 
 anomaly detection with accumulate graph
 
+Entern detection folder
+
 python Main.py --graph=acc_email.npy --split=email0.01
 
 acc_email.npy is the graph input with shape (T, N, N), where T is the number of snapshot and N is the number of nodes in the graph
