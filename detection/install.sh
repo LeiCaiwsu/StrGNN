@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../../
+cd ../
 cd pytorch_DGCNN
 cd lib
 make clean
