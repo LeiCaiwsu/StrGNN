@@ -1,6 +1,12 @@
 # StrGNN
 
----------------------------------------------------------------------------------------------------------------------------------
+## Introduction
+
+Typically, there are two ways to model dynamic systems as dynamic graphs, namely, accumulated graph and time-evolving graph. 
+The accumulated graph %automatically and incrementally constructs an entire graph using all vertices and edges until the current timestamp. 
+In contrast, the time-evolving graph is constructed using vertices and edges only appearing in the current timestamp. 
+Therefore, each snapshot represents the graph state at a single instant of time.
+
 ## Installation
 
 Go to detection folder and install required packages
@@ -58,21 +64,14 @@ If you find the code in this respository useful for your research, please cite o
 }
 ```
 
-## Acknowledge
+## Acknowledgements ACKNOWLEDGMENTS
 
 The code is implemented based on 
 
 https://github.com/muhanzhang/SEAL
+
 https://github.com/muhanzhang/pytorch_DGCNN
 
---------------------------------------------------------------------------------------------------------------------------------
-Accumulated Graph and Time-evolving Graph
-Typically, there are two ways to model dynamic systems as dynamic graphs, namely, accumulated graph and time-evolving graph. 
-The accumulated graph %automatically and incrementally constructs an entire graph using all vertices and edges until the current timestamp. 
-In contrast, the time-evolving graph is constructed using vertices and edges only appearing in the current timestamp. 
-Therefore, each snapshot represents the graph state at a single instant of time.
-
---------------------------------------------------------------------------------------------------------------------------------
 ## CopyRights
 This code can only be used for research purpose, and can not be distributed without the authors' permission.
 
