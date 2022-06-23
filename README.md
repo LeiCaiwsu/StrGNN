@@ -1,26 +1,36 @@
 # StrGNN
 
 ---------------------------------------------------------------------------------------------------------------------------------
+## Installation
 
-anomaly detection with accumulate graph
+Go to detection folder and install required packages  [PyTorch](https://pytorch.org/get-started/locally/) (>=1.6.0)
 
-Entern detection folder
+```
+bash install.sh
+```
+
+## Dataset Processing
+
+Please follow the example format in data folder to process data
+
+* acc_email.npy is the graph input with shape (T, N, N), where T is the number of snapshot and N is the number of nodes in the graph
+
+* email0.01 contains train_pos_id, train_neg_id, test_pos_id, test_neg_id, train_pos, train_neg, test_pos, test_neg:
+
+* train_pos_id is with shape (N,). It indicates the which snapshot the edge (in train_pos) come from
+
+* train_pos is with shape (N, 2). Each row i corresponds to a edge in the snapshot train_pos_id[i]
+
+* train_neg_id is with shape (N,). It indicates the which snapshot the edge (in train_neg) comes from
+
+* train_neg is with shape (N, 2). Each row i corresponds to a non-exist edge (sample for training classifier) in the snapshot train_neg_id[i]
+
+* similar for test_pos_id, test_neg_id, test_pos, test_neg
+
 
 python Main.py --graph=acc_email.npy --split=email0.01
 
-acc_email.npy is the graph input with shape (T, N, N), where T is the number of snapshot and N is the number of nodes in the graph
 
-email0.01 contains train_pos_id, train_neg_id, test_pos_id, test_neg_id, train_pos, train_neg, test_pos, test_neg:
-
-train_pos_id is with shape (N,). It indicates the which snapshot the edge (in train_pos) come from
-
-train_pos is with shape (N, 2). Each row i corresponds to a edge in the snapshot train_pos_id[i]
-
-train_neg_id is with shape (N,). It indicates the which snapshot the edge (in train_neg) comes from
-
-train_neg is with shape (N, 2). Each row i corresponds to a non-exist edge (sample for training classifier) in the snapshot train_neg_id[i]
-
-similar for test_pos_id, test_neg_id, test_pos, test_neg
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
