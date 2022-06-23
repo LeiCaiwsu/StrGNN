@@ -39,15 +39,17 @@ data_sta folder contains corresponding time-evolving graphs
 --------------------------------------------------------------------------------------------------------------------------------
 ## Citation
 If you find the code in this respository useful for your research, please cite our paper:
-  @inbook{cai2021,
-  author = {Cai, Lei and Chen, Zhengzhang and Luo, Chen and Gui, Jiaping and Ni, Jingchao and Li, Ding and Chen, Haifeng},
-  title = {Structural Temporal Graph Neural Networks for Anomaly Detection in Dynamic Graphs},
-  year = {2021},
+```
+@inproceedings{cai2021structural,
+  title={Structural temporal graph neural networks for anomaly detection in dynamic graphs},
+  author={Cai, Lei and Chen, Zhengzhang and Luo, Chen and Gui, Jiaping and Ni, Jingchao and Li, Ding and Chen, Haifeng},
+  booktitle={Proceedings of the 30th ACM international conference on Information \& Knowledge Management},
   address = {New York, NY, USA},
-  booktitle = {Proceedings of the 30th ACM International Conference on Information & Knowledge Management},
-  pages = {3747–3756},
+  pages={3747--3756},
+  year={2021},
   numpages = {10}
-  }
+}
+```
 ---------------------------------------------------------------------------------------------------------------------------------
 
 The code is implemented based on 
