@@ -37,16 +37,17 @@ data folder contains the processed email data for our model
 data_sta folder contains corresponding time-evolving graphs
 
 --------------------------------------------------------------------------------------------------------------------------------
-Our paper:
-@inbook{cai2021,
-author = {Cai, Lei and Chen, Zhengzhang and Luo, Chen and Gui, Jiaping and Ni, Jingchao and Li, Ding and Chen, Haifeng},
-title = {Structural Temporal Graph Neural Networks for Anomaly Detection in Dynamic Graphs},
-year = {2021},
-address = {New York, NY, USA},
-booktitle = {Proceedings of the 30th ACM International Conference on Information & Knowledge Management},
-pages = {3747–3756},
-numpages = {10}
-}
+## Citation
+If you find the code in this respository useful for your research, please cite our paper:
+  @inbook{cai2021,
+  author = {Cai, Lei and Chen, Zhengzhang and Luo, Chen and Gui, Jiaping and Ni, Jingchao and Li, Ding and Chen, Haifeng},
+  title = {Structural Temporal Graph Neural Networks for Anomaly Detection in Dynamic Graphs},
+  year = {2021},
+  address = {New York, NY, USA},
+  booktitle = {Proceedings of the 30th ACM International Conference on Information & Knowledge Management},
+  pages = {3747–3756},
+  numpages = {10}
+  }
 ---------------------------------------------------------------------------------------------------------------------------------
 
 The code is implemented based on 
