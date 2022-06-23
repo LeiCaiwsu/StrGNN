@@ -69,6 +69,7 @@ If you find the code in this respository useful for your research, please cite o
 The code is implemented based on 
 
 https://github.com/muhanzhang/SEAL
+
 https://github.com/muhanzhang/pytorch_DGCNN
 
 ## CopyRights
