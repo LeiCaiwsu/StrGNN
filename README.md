@@ -3,7 +3,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------
 ## Installation
 
-Go to detection folder and install required packages  [PyTorch](https://pytorch.org/get-started/locally/) (>=1.6.0)
+Go to detection folder and install required packages
 
 ```
 bash install.sh
@@ -28,25 +28,22 @@ Please follow the example format in data folder to process data
 * similar for test_pos_id, test_neg_id, test_pos, test_neg
 
 
+
+## Model Training
+
+Please use example command to train the model. More training setup available in Main.py
+
+```
 python Main.py --graph=acc_email.npy --split=email0.01
+```
 
+Anomaly detection with time-evolving graph. Parameters are the same as accumulate setting, the only difference is that the graph is time-evolving graph
 
-
----------------------------------------------------------------------------------------------------------------------------------
-
-#anomaly detection with time-evolving graph
-
+```
 python Main_statistic.py --graph=sta_email.npy --split=email0.01_sta
+```
 
-parameters are the same as accumulate setting, the only difference is that the graph is time-evolving graph
 
----------------------------------------------------------------------------------------------------------------------------------
-
-data folder contains the processed email data for our model 
-
-data_sta folder contains corresponding time-evolving graphs
-
---------------------------------------------------------------------------------------------------------------------------------
 ## Citation
 If you find the code in this respository useful for your research, please cite our paper:
 ```
@@ -60,7 +57,8 @@ If you find the code in this respository useful for your research, please cite o
   numpages = {10}
 }
 ```
----------------------------------------------------------------------------------------------------------------------------------
+
+## Acknowledge
 
 The code is implemented based on 
 
@@ -75,7 +73,7 @@ In contrast, the time-evolving graph is constructed using vertices and edges onl
 Therefore, each snapshot represents the graph state at a single instant of time.
 
 --------------------------------------------------------------------------------------------------------------------------------
-@CopyRights
+## CopyRights
 This code can only be used for research purpose, and can not be distributed without the authors' permission.
 
 
